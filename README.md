@@ -1,0 +1,2 @@
+# manjarobspwm
+Manjaro settings files

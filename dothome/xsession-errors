@@ -1,0 +1,57 @@
+xrdb:  "*background" on line 8 overrides entry on line 6
+bash: cannot set terminal process group (869): Inappropriate ioctl for device
+bash: no job control in this shell
+xrdb:  "*background" on line 8 overrides entry on line 6
+/usr/bin/bspwm-session: 27: /home/manjaro/.config/bspwm/autostart: xbacklight: not found
+/usr/bin/bspwm-session: 40: /home/manjaro/.config/bspwm/autostart: gnome-keyring-daemon: not found
+xset:  bad font path element (#0), possible causes are:
+    Directory does not exist or has wrong permissions
+    Directory missing fonts.dir
+    Incorrect font server address or syntax
+xrdb:  "*background" on line 8 overrides entry on line 6
+xset:  bad font path element (#0), possible causes are:
+    Directory does not exist or has wrong permissions
+    Directory missing fonts.dir
+    Incorrect font server address or syntax
+awk: fatal: cannot open file `/home/manjaro/.config/autostart/lxrandr-autostart.desktop' for reading (No such file or directory)
+[ 10/21/2019 07:32:59.744 parse_config_libconfig WARN ] glx-swap-method has been deprecated since v6, your setting "undefined" should be removed.
+mount: /media/manjaro/MJRO1804: /dev/sdc already mounted or mount point busy.
+devmon: error mounting /dev/sdc (32)
+/usr/bin/sterminal: 14: [: -e: unexpected operator
+error connecting to /tmp//tmux-1000/default (No such file or directory)
+
+** (pcmanfm:3855): WARNING **: 07:40:19.482: terminal sterminal isn't known, consider report it to LibFM developers
+
+(pcmanfm:3855): Gtk-WARNING **: 07:40:20.032: Theme parsing error: <data>:2:27: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(pcmanfm:3855): Gtk-WARNING **: 07:40:20.032: Theme parsing error: <data>:3:30: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(pcmanfm:3855): Gtk-WARNING **: 07:40:20.078: gtk_window_present_with_time() should not be called with 0, or GDK_CURRENT_TIME as a timestamp, the timestamp should instead be gathered at the time the user initiated the request for the window to be shown
+
+(pcmanfm:3855): Gtk-WARNING **: 07:40:24.872: Failed to set text from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(pcmanfm:3855): Gtk-WARNING **: 07:40:24.972: Failed to set text from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(pcmanfm:3855): Gtk-WARNING **: 07:40:34.655: Failed to set text from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(pcmanfm:3855): Gtk-WARNING **: 07:40:43.169: Failed to set text from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+/usr/bin/sterminal: 14: [: -e: unexpected operator
+couldn't read from shell: Input/output error
+can't find session 7935
+/usr/bin/sterminal: 14: [: -e: unexpected operator
+child finished with error '256'
+can't find session 7966
+erresc: unknown private set/reset mode 1005
+erresc: unknown private set/reset mode 1005
+no server running on /tmp/tmux-1000/default
+child finished with error '256'
+
+(pcmanfm:3855): Gtk-WARNING **: 08:20:32.604: Failed to set text from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+wattr: 0x01800005: no such window
+expr: non-integer argument
+expr: non-integer argument
+expr: non-integer argument
+expr: non-integer argument
+usage: xinput query-state <device name>
+child finished with error '32512'
+tmux: error while loading shared libraries: libevent-2.1.so.7: cannot open shared object file: No such file or directory

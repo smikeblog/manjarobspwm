@@ -1,0 +1,61 @@
+#!/bin/sh
+
+xdg=$(xdg-user-dir DESKTOP)
+src='/usr/share/applications'
+
+is_sonar(){
+	. /etc/os-release
+	if [[ $NAME == "Sonar Linux" ]]; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+if [[ -f /usr/bin/thus ]]; then
+	install -Dm755 $src/thus.desktop \
+	$xdg/thus.desktop
+	if $(is_sonar); then
+		sed -e "s/^.*Name=.*/Name=Install Sonar Linux/" -i $xdg/thus.desktop
+	fi
+fi
+
+if [[ -f /usr/bin/calamares ]]; then
+	install -Dm755 $src/calamares.desktop \
+	$xdg/calamares.desktop
+	if $(is_sonar); then
+		sed -e "s/^.*Name=.*/Name=Install Sonar Linux (Calamares)/" -i $xdg/calamares.desktop
+	fi
+fi
+
+if [[ -f /usr/bin/manjaro-architect ]]; then
+    install -Dm755 $src/manjaro-architect.desktop \
+    $xdg/manjaro-architect.desktop
+
+    # workaround for mate-terminal; https://github.com/manjaro/desktop-settings/issues/120
+    if [[ $DESKTOP_SESSION == "mate" ]]; then
+        sed -i "s/^Exec.*/Exec=mate-terminal -e 'sudo \/usr\/bin\/setup'/; s/Terminal.*/Terminal=false/" $xdg/manjaro-architect.desktop
+    fi
+fi
+
+if [[ -f "$src/manjaro-documentation.desktop" ]]; then
+	install -Dm755 $src/manjaro-documentation.desktop \
+	"$xdg/manjaro-documentation.desktop"
+fi
+
+if [[ -f "$src/manjaro-welcome.desktop" ]]; then
+	install -Dm755 $src/manjaro-welcome.desktop \
+	"$xdg/manjaro-welcome.desktop"
+fi
+
+if [[ -f "$src/hexchat.desktop" ]]; then
+	install -Dm755 $src/hexchat.desktop \
+	"$xdg/hexchat.desktop"
+fi
+
+# workaround for glib trash bug (https://bugzilla.gnome.org/show_bug.cgi?id=748248)
+userid=$(id -u $USER)
+if [ ! -d "/.Trash-$userid" ]; then
+    sudo mkdir -p /.Trash-$userid/{expunged,files,info}
+    sudo chown -R $userid /.Trash-$userid
+fi
